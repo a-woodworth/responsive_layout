@@ -1,0 +1,148 @@
+/*___________________________________________________________________
+    Global Layout Set-up
+____________________________________________________________________*/
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+  background-color: #EDEDED;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/*___________________________________________________________________
+    Base Layout Styles
+____________________________________________________________________*/
+
+/* ----- Navigation ----- */
+
+.name {
+  font-size: 1.25em;
+}
+
+.main_nav {
+  margin-top: 5px;
+}
+
+.name a,
+.main-nav a {
+  padding: 10px 15px;
+  text-align: center;
+  display: block;
+}
+
+
+/* ----- Layout Containers -----*/
+
+.main_header {
+
+}
+
+.container {
+
+}
+
+.bio {
+
+}
+
+.portfolio {
+
+}
+
+.contact {
+
+}
+
+.main_footer {
+
+}
+
+
+
+/*___________________________________________________________________
+    Page Elements
+____________________________________________________________________*/
+
+/* ----- Bio Section -----*/
+
+#bio_photo {
+  display: block;
+  border-radius: 100%;
+}
+
+.intro {
+
+}
+
+
+/* ----- Portfolio Section ----- */
+
+
+.card {
+
+}
+
+
+/* ----- Contact Section ----- */
+
+
+
+
+/*___________________________________________________________________
+    Media Queries
+____________________________________________________________________*/
+
+/* ----- Mobile ----- */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+  #full_footer {
+    display: none;
+  }
+
+}
+
+/* ----- Tablet ----- */
+
+@media screen and (min-width: 768px) {
+
+  #mobile_footer {
+    display: none;
+  }
+
+}
+
+/* ----- Laptop/Desktop ----- */
+
+@media screen and (min-width: 1024px) {
+
+
+}
+
