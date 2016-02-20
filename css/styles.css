@@ -62,7 +62,7 @@ ____________________________________________________________________*/
 
 .name a,
 .main_nav a {
-  padding: 10px 30px;
+  padding: 10px;
   text-align: center;
   display: block;
   color: #515151;
@@ -72,7 +72,6 @@ ____________________________________________________________________*/
   font-size: .95em;
   font-weight: 700;
   text-transform: uppercase;
-  background-color: #fff;
   margin-bottom: 5px;
 }
 
@@ -150,6 +149,15 @@ ____________________________________________________________________*/
   text-transform: uppercase;
 }
 
+/* ----- Float Clearfix ----- */
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 
 /*___________________________________________________________________
     Media Queries
@@ -164,35 +172,54 @@ ____________________________________________________________________*/
     margin: 0 auto;
   }
 
+  .main_nav a {
+    background-color: #fff;
+  }
+
   #full_footer {
     display: none;
   }
 
 }
 
-/* ----- Float Clearfix ----- */
-
-.clearfix::after {
-  content: " ";
-  display: table;
-  clear: both;
-}
-
 /* ----- Tablet ----- */
 
 @media screen and (min-width: 768px) {
 
-  .name {
-    float: left;
+  .container {
+    width: 85%;
+    max-width: 1150px;
+    margin: 0 auto;
   }
 
-  .main_nav {
-    float: left;
+  .main_header {
+    text-align: center;
+  }
+
+  .main_nav a {
+    background-color: none;
   }
 
   .main_nav li {
     display: inline-block;
     margin-left: 15px;
+  }
+
+  .bio {
+    padding: 0 5%;
+  }
+
+  .intro {
+    font-size: 1.125em;
+    float: left;
+    width: 55%;
+    margin-top: 2rem;
+    text-align: left;
+  }
+
+  .bio_photo {
+    float: right;
+    width: 45%;
   }
 
   #mobile_footer {
