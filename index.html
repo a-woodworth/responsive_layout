@@ -2,18 +2,21 @@
 <html>
   <head>
     <title>Hello KittyCoder</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
 
     <header class="main_header">
-      <div class="container">
+      <div class="container clearfix">
         <span><a id="top_of_page"></a></span>
         <h1 class="name"><a id="name">Hello KittyCoder</a></h1>
         <ul class="main_nav">
-          <li><a href="#top_of_page">Home</a></li>
+          <li>
+            <a href="#top_of_page">Home</a>
+          </li>
           <li><a href="#my_portfolio">Portfolio</a></li>
           <li><a href="#contact_me">Contact</a></li>
         </ul>
@@ -21,8 +24,10 @@
     </header><!--/.main-header-->
 
     <div class="bio">
-      <p class="intro">Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use!</p>
-      <img id="bio_photo" src="images/profile_picture.jpg">
+      <div class="bio_photo">
+        <img id="bio_photo" src="images/profile_picture.jpg">
+      </div>
+      <p class="intro">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
     </div><!--/.bio-->
 
     <section class="portfolio">
@@ -74,7 +79,7 @@
     </section><!--/.contact-->
 
     <footer class="main_footer">
-      <p>Hello KittyCoder</p>
+      <p class="name">Hello KittyCoder</p>
       <ul>
         <div id="full_footer">
           <li><a href="#top_of_page">Home</a></li>

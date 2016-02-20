@@ -2,7 +2,7 @@
     Global Layout Set-up
 ____________________________________________________________________*/
 
-html {
+* {
   box-sizing: border-box;
 }
 
@@ -10,12 +10,21 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   line-height: 1.6;
-  background-color: #EDEDED;
-  margin: 0;
-  padding: 0;
+  background-color: #FAFAFA;
 }
 
 h1, h2 {
+  font-size: 1em;
+  text-align: center;
+  color: #515151;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+h2 {
+  text-transform: uppercase;
   font-weight: 700;
 }
 
@@ -43,7 +52,8 @@ ____________________________________________________________________*/
 /* ----- Navigation ----- */
 
 .name {
-  font-size: 1.25em;
+  font-size: 1.5em;
+  margin: 0;
 }
 
 .main_nav {
@@ -51,39 +61,45 @@ ____________________________________________________________________*/
 }
 
 .name a,
-.main-nav a {
-  padding: 10px 15px;
+.main_nav a {
+  padding: 10px 30px;
   text-align: center;
   display: block;
+  color: #515151;
+}
+
+.main_nav a {
+  font-size: .95em;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #fff;
+  margin-bottom: 5px;
 }
 
 
 /* ----- Layout Containers -----*/
 
 .main_header {
-
-}
-
-.container {
-
+  padding: .5em 0 .5em;
+  margin: 0 auto;
 }
 
 .bio {
-
+  padding: 0 1em;
 }
 
 .portfolio {
-
+  padding: 5%;
+  background-color: #fff;
 }
 
 .contact {
-
+  text-align: center;
 }
 
 .main_footer {
-
+  font-size: .75em;
 }
-
 
 
 /*___________________________________________________________________
@@ -95,24 +111,44 @@ ____________________________________________________________________*/
 #bio_photo {
   display: block;
   border-radius: 100%;
+  max-width: 150px;
+  position: relative;
+  top: 17.5px;
+  left: 75px;
+}
+
+.bio_photo {
+  max-width: 300px;
+  height: 185px;
+  background-color: #EDEDED;
+  margin: 2rem auto;
 }
 
 .intro {
-
+  font-size: 1.25em;
+  color: rgb(126, 126, 126);
+  text-align: center;
+  margin: 0 0 3rem;
 }
 
-
 /* ----- Portfolio Section ----- */
-
 
 .card {
 
 }
 
-
 /* ----- Contact Section ----- */
 
+.contact a {
+  color: #939393;
+}
 
+/* ----- Footer ----- */
+
+#full_footer,
+#mobile_footer {
+  text-transform: uppercase;
+}
 
 
 /*___________________________________________________________________
@@ -123,15 +159,41 @@ ____________________________________________________________________*/
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   #full_footer {
     display: none;
   }
 
 }
 
+/* ----- Float Clearfix ----- */
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
 /* ----- Tablet ----- */
 
 @media screen and (min-width: 768px) {
+
+  .name {
+    float: left;
+  }
+
+  .main_nav {
+    float: left;
+  }
+
+  .main_nav li {
+    display: inline-block;
+    margin-left: 15px;
+  }
 
   #mobile_footer {
     display: none;
@@ -143,6 +205,10 @@ ____________________________________________________________________*/
 
 @media screen and (min-width: 1024px) {
 
+  .container {
+      width: 80%;
+      margin: 0 auto;
+    }
 
 }
 
