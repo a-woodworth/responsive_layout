@@ -97,7 +97,8 @@ ____________________________________________________________________*/
 }
 
 .main_footer {
-  font-size: .75em;
+  padding: 5%;
+  display: block;
 }
 
 
@@ -144,9 +145,18 @@ ____________________________________________________________________*/
 
 /* ----- Footer ----- */
 
+.main_footer a {
+  padding-top: 1rem;
+  font-size: .75em;
+  font-weight: 800;
+  color: #515151;
+  float: left;
+}
+
 #full_footer,
 #mobile_footer {
   text-transform: uppercase;
+  float: right;
 }
 
 /* ----- Float Clearfix ----- */
@@ -187,8 +197,7 @@ ____________________________________________________________________*/
 @media screen and (min-width: 768px) {
 
   .container {
-    width: 85%;
-    max-width: 1150px;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -200,7 +209,8 @@ ____________________________________________________________________*/
     background-color: none;
   }
 
-  .main_nav li {
+  .main_nav li,
+  .main_footer li {
     display: inline-block;
     margin-left: 15px;
   }
@@ -233,8 +243,7 @@ ____________________________________________________________________*/
 @media screen and (min-width: 1024px) {
 
   .container {
-      width: 80%;
-      margin: 0 auto;
+    max-width: 1150px;
     }
 
 }
