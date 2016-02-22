@@ -178,9 +178,16 @@ ____________________________________________________________________*/
   margin: 10px 0 30px;
 }
 
-.contact p,
+.message,
+.phone,
+.email,
 .contact a {
   color: #939393;
+  font-size: 1.125em;
+}
+
+.phone {
+  padding: 30px 0 15px;
 }
 
 .contact a {
@@ -247,8 +254,8 @@ ____________________________________________________________________*/
     padding: 0 .5rem;
   }
 
-  .contact p {
-    margin: 1rem;
+  .message {
+    margin-top: 1rem;
   }
 
   .footer_links {
@@ -300,14 +307,15 @@ ____________________________________________________________________*/
     padding: .175rem;
   }
 
-  .card p {
-    padding: 0 1rem 3rem;
+  .message {
+    padding: 0 3rem 2rem;
+    margin: 1.5rem 3rem 0;
   }
 
-  .contact p {
-    font-size: 1.25em;
-    margin: 1.5rem 3rem;
+  .phone {
+    padding: 0 0 15px;
   }
+
 
   .footer_nav li {
     display: inline-block;
@@ -360,7 +368,8 @@ ____________________________________________________________________*/
 
   .intro {
     margin: 0;
-    padding: 0 10px;
+    padding: 0 0 0 10px;
+
   }
 
   #bio_photo {            /* Profile Photo */
@@ -377,12 +386,17 @@ ____________________________________________________________________*/
     padding: .175rem;
   }
 
+  .card p {
+    font-size: .95em;
+    padding: 0 0 45px;
+  }
+
   .contact {
     margin-top: 0;
   }
 
-  .contact p {
-    margin: 1.5rem 14rem;
+  .message {
+    margin: 1.5rem 10rem 0;
   }
 
 }
