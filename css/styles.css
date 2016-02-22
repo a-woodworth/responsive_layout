@@ -163,7 +163,7 @@ ____________________________________________________________________*/
 }
 
 .card img {
-  padding: .35em;
+  padding: 1px;
 }
 
 
@@ -194,20 +194,28 @@ hr {
   background-color: #FAFAFA;
 }
 
-.main_footer p,
-.main_footer a {
+.main_footer a,
+.main_footer p {
   padding: 1rem 2rem 2rem;
   font-size: .85em;
   font-weight: 800;
   color: #515151;
+  display: block;
+}
+
+.main_footer p {
   float: left;
+}
+
+.footer_nav {
+  float: right;
 }
 
 .footer_links,
 #mobile_footer {
   text-transform: uppercase;
-  float: right;
 }
+
 
 /* ----- Float Clearfix ----- */
 
@@ -301,7 +309,7 @@ ____________________________________________________________________*/
     margin: 1.5rem 3rem;
   }
 
-  .main_footer li {
+  .footer_nav li {
     display: inline-block;
     margin-left: -40px;
   }
@@ -316,9 +324,66 @@ ____________________________________________________________________*/
 
 @media screen and (min-width: 1024px) {
 
+  body {
+    background-color: #FAFAFA;
+  }
+
   .container {
-    max-width: 1150px;
+    width: 85%;
+    max-width: 1024px;
+    margin: 0 auto;
     }
+
+  .main_header {
+    text-align: left;
+    margin: 25px 0;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .main_nav {
+    float: right;
+  }
+
+  .name,
+  .main_nav li {
+    display: inline-block;
+  }
+
+  .bio,
+  .portfolio {
+    margin: 0 5%;
+    padding: 0 2.5% 5%;
+  }
+
+  .intro {
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  #bio_photo {            /* Profile Photo */
+    max-width: 200px;
+  }
+
+  .bio_photo {            /* Photo Background */
+    max-width: 350px;
+    height: 235px;
+  }
+
+  .card {
+    width: 32%;
+    padding: .175rem;
+  }
+
+  .contact {
+    margin-top: 0;
+  }
+
+  .contact p {
+    margin: 1.5rem 14rem;
+  }
 
 }
 
