@@ -10,7 +10,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   line-height: 1.6;
-  background-color: #FAFAFA;
 }
 
 h1, h2 {
@@ -26,14 +25,19 @@ h1 {
 h2 {
   text-transform: uppercase;
   font-weight: 700;
+  margin: 0;
 }
 
 h3 {
   font-weight: 600;
+  color: rgba(0,0,0, .75);
+  margin: 0;
+  padding: 20px 0 10px;
 }
 
 p {
   font-weight: 400;
+  margin: 0;
 }
 
 a {
@@ -81,24 +85,31 @@ ____________________________________________________________________*/
 .main_header {
   padding: .5em 0 .5em;
   margin: 0 auto;
+  background-color: #FAFAFA;
 }
 
 .bio {
   padding: 0 1em;
+  background-color: #FAFAFA;
 }
 
 .portfolio {
-  padding: 5%;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .contact {
   text-align: center;
+  padding: 2rem;
 }
 
 .main_footer {
-  padding: 5%;
-  display: block;
+  min-height: 125px;
+  background-color: #FAFAFA;
+  margin: 0;
+  padding-top: 2rem;
 }
 
 
@@ -121,7 +132,7 @@ ____________________________________________________________________*/
   max-width: 300px;
   height: 185px;
   background-color: #EDEDED;
-  margin: 2rem auto;
+  margin: 0 auto;
 }
 
 .intro {
@@ -129,25 +140,63 @@ ____________________________________________________________________*/
   color: rgb(126, 126, 126);
   text-align: center;
   margin: 0 0 3rem;
+  padding-top: 2rem;
 }
 
 /* ----- Portfolio Section ----- */
 
-.card {
-
+.portfolio h2 {
+  padding: 2rem;
+  width: 100%;
 }
+
+.card {
+  text-align: center;
+  float: left;
+  display: block;
+}
+
+.card p {
+  padding: 0 3rem 45px;
+  font-weight: 300;
+}
+
+.card img {
+  padding: .35em;
+}
+
 
 /* ----- Contact Section ----- */
 
-.contact a {
+.contact {
+  background-color: #FAFAFA;
+  margin-top: 30px;
+}
+
+.contact h2 {
+  margin: 10px 0 30px;
+}
+
+.contact p {
   color: #939393;
 }
 
-/* ----- Footer ----- */
+.contact a {
+  color: #939393;
+  font-weight: bold;
+  margin-left: 10px;
+}
 
+/* ----- Footer ----- */
+hr {
+  margin: 0 2rem;
+  background-color: #FAFAFA;
+}
+
+.main_footer p,
 .main_footer a {
-  padding-top: 1rem;
-  font-size: .75em;
+  padding: 1rem 2rem 2rem;
+  font-size: .85em;
   font-weight: 800;
   color: #515151;
   float: left;
@@ -186,6 +235,14 @@ ____________________________________________________________________*/
     background-color: #fff;
   }
 
+  .card {
+    padding: 0 .5rem;
+  }
+
+  .contact p {
+    margin: 1rem;
+  }
+
   #full_footer {
     display: none;
   }
@@ -197,8 +254,7 @@ ____________________________________________________________________*/
 @media screen and (min-width: 768px) {
 
   .container {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
   }
 
   .main_header {
@@ -209,8 +265,7 @@ ____________________________________________________________________*/
     background-color: none;
   }
 
-  .main_nav li,
-  .main_footer li {
+  .main_nav li {
     display: inline-block;
     margin-left: 15px;
   }
@@ -230,6 +285,29 @@ ____________________________________________________________________*/
   .bio_photo {
     float: right;
     width: 45%;
+  }
+
+  .portfolio {
+    margin: 0 3rem;
+  }
+
+  .card {
+    width: 50%;
+    padding: .175rem;
+  }
+
+  .card p {
+    padding: 0 1rem 3rem;
+  }
+
+  .contact p {
+    font-size: 1.25em;
+    margin: 1.5rem 3rem;
+  }
+
+  .main_footer li {
+    display: inline-block;
+    margin-left: -40px;
   }
 
   #mobile_footer {
