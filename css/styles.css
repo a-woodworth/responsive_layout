@@ -8,7 +8,6 @@ ____________________________________________________________________*/
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
   line-height: 1.6;
 }
 
@@ -83,7 +82,7 @@ ____________________________________________________________________*/
 /* ----- Layout Containers -----*/
 
 .main_header {
-  padding: .5em 0 .5em;
+  padding: .5em 0;
   margin: 0 auto;
   background-color: #FAFAFA;
 }
@@ -119,7 +118,7 @@ ____________________________________________________________________*/
 
 /* ----- Bio Section -----*/
 
-#bio_photo {
+#bio_photo {            /* Profile Photo */
   display: block;
   border-radius: 100%;
   max-width: 150px;
@@ -128,7 +127,7 @@ ____________________________________________________________________*/
   left: 75px;
 }
 
-.bio_photo {
+.bio_photo {            /* Photo Background */
   max-width: 300px;
   height: 185px;
   background-color: #EDEDED;
@@ -142,6 +141,7 @@ ____________________________________________________________________*/
   margin: 0 0 3rem;
   padding-top: 2rem;
 }
+
 
 /* ----- Portfolio Section ----- */
 
@@ -177,12 +177,12 @@ ____________________________________________________________________*/
   margin: 10px 0 30px;
 }
 
-.contact p {
+.contact p,
+.contact a {
   color: #939393;
 }
 
 .contact a {
-  color: #939393;
   font-weight: bold;
   margin-left: 10px;
 }
@@ -215,7 +215,6 @@ hr {
   display: table;
   clear: both;
 }
-
 
 
 /*___________________________________________________________________
