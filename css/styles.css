@@ -202,7 +202,7 @@ hr {
   float: left;
 }
 
-#full_footer,
+.footer_links,
 #mobile_footer {
   text-transform: uppercase;
   float: right;
@@ -243,7 +243,7 @@ ____________________________________________________________________*/
     margin: 1rem;
   }
 
-  #full_footer {
+  .footer_links {
     display: none;
   }
 
@@ -259,10 +259,6 @@ ____________________________________________________________________*/
 
   .main_header {
     text-align: center;
-  }
-
-  .main_nav a {
-    background-color: none;
   }
 
   .main_nav li {
