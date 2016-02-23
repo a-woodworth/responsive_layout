@@ -57,7 +57,6 @@ ____________________________________________________________________*/
 
 .name {
   font-size: 1.5em;
-  margin: 6px 0;
 }
 
 .main_nav {
@@ -95,10 +94,9 @@ a:hover,
 /* ----- Layout Containers -----*/
 
 .main_header {
-  padding: .5em 0;
+  padding: .5em 0 45px;
   margin: 0 auto;
   background-color: #FAFAFA;
-  padding-bottom: 45px;
 }
 
 .bio {
@@ -440,14 +438,14 @@ ____________________________________________________________________*/
     margin-top: 0;
   }
 
-  .message {
-    margin: 1.5rem 10rem 0;
-    font-size: 1.175em;
-  }
-
+  .message,
   .phone,
   .email {
     font-size: 1.175em;
+  }
+
+  .message {
+    margin: 1.5rem 10rem 0;
   }
 
 }
