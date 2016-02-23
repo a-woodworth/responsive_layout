@@ -57,26 +57,38 @@ ____________________________________________________________________*/
 
 .name {
   font-size: 1.5em;
-  margin: 0;
+  margin: 6px 0;
 }
 
 .main_nav {
   margin-top: 5px;
 }
 
-.name a,
+.name,
+.main_nav li {
+  text-align: center;
+  color: #515151;
+  margin: 6px 0;
+}
+
+.name,
 .main_nav a {
   padding: 10px;
   text-align: center;
   display: block;
-  color: #515151;
 }
 
 .main_nav a {
   font-size: .95em;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 5px;
+  color: #515151;
+}
+
+a:hover,
+.phone a:hover,
+.email a:hover {
+  color: #51BAB5;
 }
 
 
@@ -86,6 +98,7 @@ ____________________________________________________________________*/
   padding: .5em 0;
   margin: 0 auto;
   background-color: #FAFAFA;
+  padding-bottom: 45px;
 }
 
 .bio {
@@ -136,7 +149,7 @@ ____________________________________________________________________*/
 }
 
 .intro {
-  font-size: 1.25em;
+  font-size: .95em;
   color: rgb(126, 126, 126);
   text-align: center;
   margin: 0 0 3rem;
@@ -149,6 +162,7 @@ ____________________________________________________________________*/
 .portfolio h2 {
   padding: 2rem;
   width: 100%;
+  margin: 15px 0;
 }
 
 .card {
@@ -160,6 +174,7 @@ ____________________________________________________________________*/
 .card p {
   font-weight: 300;
   padding: 0 1rem 45px;
+  font-size: .95em;
 }
 
 .card img {
@@ -183,7 +198,7 @@ ____________________________________________________________________*/
 .email,
 .contact a {
   color: #939393;
-  font-size: 1.125em;
+  font-size: .85em;
 }
 
 .phone {
@@ -203,11 +218,15 @@ hr {
 
 .main_footer a,
 .main_footer p {
-  padding: 1rem 2rem 2rem;
-  font-size: .85em;
+  padding: 1rem 2rem 1rem;
+  font-size: .75em;
   font-weight: 800;
   color: #515151;
   display: block;
+}
+
+.main_footer a:hover {
+  color: #51BAB5;
 }
 
 .main_footer p {
@@ -239,7 +258,7 @@ ____________________________________________________________________*/
 
 /* ----- Mobile ----- */
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) {
 
   .container {
     width: 90%;
@@ -274,6 +293,11 @@ ____________________________________________________________________*/
 
   .main_header {
     text-align: center;
+    padding-top: 45px;
+  }
+
+  .main_nav a {
+    background-color: #FAFAFA;
   }
 
   .main_nav li {
@@ -282,15 +306,15 @@ ____________________________________________________________________*/
   }
 
   .bio {
-    padding: 0 5%;
+    padding: 0 5% 45px;
   }
 
   .intro {
     font-size: 1.125em;
     float: left;
     width: 55%;
-    margin-top: 2rem;
     text-align: left;
+    padding-top: 0;
   }
 
   .bio_photo {
@@ -309,6 +333,7 @@ ____________________________________________________________________*/
 
   .card p {
     padding: 0 1.35rem 45px;
+    font-size: 1em;
   }
 
   .message {
@@ -316,10 +341,20 @@ ____________________________________________________________________*/
     margin: 1.5rem 3rem 0;
   }
 
+  .message,
+  .phone,
+  .email,
+  .contact a {
+    font-size: 1.125em;
+  }
+
   .phone {
     padding: 0 0 15px;
   }
-
+  .main_footer a,
+  .main_footer p {
+    padding: 1rem 2rem 2rem;
+  }
 
   .footer_nav li {
     display: inline-block;
@@ -348,7 +383,8 @@ ____________________________________________________________________*/
 
   .main_header {
     text-align: left;
-    margin: 25px 0;
+    margin: 35px 0;
+    padding: 0;
   }
 
   .name {
@@ -362,6 +398,10 @@ ____________________________________________________________________*/
   .name,
   .main_nav li {
     display: inline-block;
+  }
+
+  .main_nav a {
+    padding: 10px 0 10px 10px;
   }
 
   .bio,
@@ -402,6 +442,12 @@ ____________________________________________________________________*/
 
   .message {
     margin: 1.5rem 10rem 0;
+    font-size: 1.175em;
+  }
+
+  .phone,
+  .email {
+    font-size: 1.175em;
   }
 
 }
